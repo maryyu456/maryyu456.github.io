@@ -1,0 +1,16 @@
+mixin navitem(url,text,haschild,urlClass)
+  if haschild
+    li.nav-item.has-sub(class={ active : currentUrl == url })
+      a(href=url class=urlClass) #{text}
+      ul.sub-nav
+        block
+  else
+    li.nav-item(class={ active : currentUrl == url })
+      a(href=url class=urlClass) #{text}
+        block
+ul.mainnav
+  +navitem('index.html','Mary','','logo')
+  +navitem('blog.html','Blog')
+  +navitem('album.html','Album')
+  +navitem('contact.html','Contact me')
+    

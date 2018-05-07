@@ -1,0 +1,31 @@
+extend pug/basic
+block var
+ - var pagetitle = "My Home Page"
+ - var layout = "onlycenter"
+ - var currentUrl = "index.html"
+ - var pageclass="page-home"
+block header
+  hgroup
+    .avatar
+      img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1805997/profile/profile-80.jpg?1520230975")
+    h1.header-title I'm Mary
+    .social
+      a.btn-fb(href="http://www.facebook.com/MaryYuTasty/" target="_blank")
+        i.fab.fa-facebook-f
+      a.btn-ig(href="http://www.instagram.com/" target="_blank")
+        i.fab.fa-instagram
+block content
+  section.feature
+    .inner.cell-group
+      .cell
+        i.far.fa-meh
+        h3.feature-title Hi, I'm Mary.
+      .cell
+        i.fas.fa-hands
+        h3.feature-title Welcome to my website.
+      .cell
+        i.fas.fa-paint-brush
+        h3.feature-title There are many my art works.
+      .cell
+        i.far.fa-hand-point-up
+        h3.feature-title Just follow me to view more.

@@ -1,0 +1,25 @@
+extend pug/basic
+block var
+ - var pagetitle = "My Home Page"
+ - var layout = "hasaside"
+ - var currentUrl = "blog.html"
+ - var pageclass="page-blog"
+block header
+  hgroup
+    h1.header-title My Blog
+block content
+  mixin blogitem(title,date,imgurl)
+     .blogitem
+       .blogimg(style="background-image: url("+ imgurl+ ")")
+       .blogcontent
+         h4.blog-title #{title}
+         .blogsumary
+           block
+         .blog-date #{date}
+    
+  .bloglist
+    +blogitem('TitleTitle','2018/04/16','https://images.unsplash.com/photo-1516282956990-53c26a041063?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8b1290f8125875b2b6ab814377ee64f9&auto=format&fit=crop&w=1350&q=80')|Crediting isn’t required, but is appreciated and allows photographers to gain exposure. Copy the text below
+    +blogitem('TitleTitle','2018/04/16','https://images.unsplash.com/photo-1507980062492-714282f31ee0?ixlib=rb-0.3.5&s=f7141412ddf87f2500415b9b67ec5fe0&auto=format&fit=crop&w=1350&q=80')|Crediting isn’t required, but is appreciated and allows photographers to gain exposure. Copy the text below
+    +blogitem('TitleTitle','2018/04/16','https://images.unsplash.com/photo-1479888912530-af5a74b7adea?ixlib=rb-0.3.5&s=9043f36808eb9436b4bb57022cff2af0&auto=format&fit=crop&w=1350&q=80')|Crediting isn’t required, but is appreciated and allows photographers to gain exposure. Copy the text below
+    +blogitem('TitleTitle','2018/04/16','https://images.unsplash.com/photo-1477511515466-ffc0a97dca35?ixlib=rb-0.3.5&s=777ccb79f534ffae18f8e2bef98fe4e4&auto=format&fit=crop&w=1351&q=80')|Crediting isn’t required, but is appreciated and allows photographers to gain exposure. Copy the text below
+    +blogitem('TitleTitle','2018/04/16','https://images.unsplash.com/photo-1453342664588-b702c83fc822?ixlib=rb-0.3.5&s=0c8388fdd921810e99df1decfb6a72e9&auto=format&fit=crop&w=1340&q=80')|Crediting isn’t required, but is appreciated and allows photographers to gain exposure. Copy the text below

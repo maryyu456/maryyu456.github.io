@@ -1,0 +1,34 @@
+block var
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width")
+    //RWD必要的meta
+    title #{pagetitle}
+    link(href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet")
+    link(href="css/style.processed.css" rel="stylesheet")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous")
+  body(class=pageclass)
+    input.burger-toggle(type="checkbox")
+    .btn-burger
+    nav.topnav
+      include nav
+    .wrapper
+        header.hero
+          block header
+          
+          
+        case layout
+          when 'onlycenter'
+            main.content
+              block content
+          when 'hasaside'
+            .inner
+              main.content
+                block content
+              aside.right-col
+                block aside
+            
+    footer.footer
+      block footer
