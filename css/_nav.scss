@@ -30,7 +30,7 @@
   }
   &.active{
     a{
-      color:#75e4e8;
+      color:#c6a759;
     }
   }
   a{
@@ -44,7 +44,7 @@
     font-family: sans-serif;
     &.logo{
       font-size:26px;
-      font-family: 'Audiowide', cursive;
+      font-family: 'Pacifico', cursive;
     }
     &:after{
       content:"";
@@ -53,7 +53,7 @@
       left:50%;
       right:50%;
       height:3px;
-      background:#75e4e8;
+      background:#c6a759;
       border-radius:5px;
       transition:all 800ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
     }

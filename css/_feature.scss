@@ -19,13 +19,13 @@
     display:inline-block;
     width:64px;
     height:64px;
-    background: #18316d;
+    background: #000;
     border-radius:50%;
     font-size:35px;
     line-height:65px;
     color:#fff;
     &:before{
-      background: linear-gradient(to bottom,#75e4e8 0,#fff 100%);
+      background: linear-gradient(to bottom,#c6a759 0,#fff 100%);
       -webkit-text-fill-color: transparent;
       -webkit-background-clip:text;
     }
@@ -42,7 +42,7 @@
 
 .page-blog{
   .wrapper{
-    background:#ccc;
+    background:#ddd;
   }
 }
 .bloglist{
@@ -51,8 +51,9 @@
 }
 .blogitem{
   margin:20px 0;
-  display:table;
-  width:100%;
+  vertical-align: top;
+  display:inline-block;
+  width:300px;
   font-family:sans-serif;
   background:#fff;
   border-radius:5px;
@@ -64,14 +65,17 @@
 }
 
 .blogimg{
-  display:table-cell;
-  width:30%;
+  border-radius:5px 5px 0px 0px;
+  display:block;
+  position: relative;
+  height:150px;
   background-size:cover;
-  background-position:center;
+  background-position: center;
+  
 }
 .blogcontent{
-  display:table-cell;
-  width:70%;
+  display:inline-block;
+  text-align:left;
   padding:20px;
 }
 .blog-title{

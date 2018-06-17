@@ -9,8 +9,7 @@ mixin navitem(url,text,haschild,urlClass)
       a(href=url class=urlClass) #{text}
         block
 ul.mainnav
-  +navitem('index.html','Mary','','logo')
+  +navitem('index.html','Yummy','','logo')
   +navitem('blog.html','Blog')
   +navitem('album.html','Album')
-  +navitem('contact.html','Contact me')
     
